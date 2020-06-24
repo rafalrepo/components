@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap');
+
+:root{
+    --bg-color: #0f121f;
+    --text-color: #0f121f;
+    --default-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Muli', sans-serif;
+    height: 100vh;
+}
+
+a,
+a:hover {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.modal{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 537px;
+    height: 516px;
+    border-radius: 10px;
+    background-color: var(--default-color);
+}
+
+.heading{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.lead{
+    font-size: 18px;
+    max-width: 380px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.policy{
+    max-width: 306px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.btn{
+    display: inline-block;
+    width: 281px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 65px;
+    transition: .2s ease-in-out;
+}
+
+.btn:hover{
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.btn--google{
+    background: url('../img/google-icon.svg') no-repeat 25px 17px;
+    border: 1px solid #eb4335;
+    box-shadow: 0 12px 17px -9px rgba(235, 67, 53, 1);
+}
+
+.btn--google:hover{
+    background-color: rgba(235, 67, 53, 0.4);
+}
+
+.btn--twitter{
+    background: url('../img/twitter-icon.svg') no-repeat 25px 21px;
+    border: 1px solid #5da8dc;
+    box-shadow: 0 12px 17px -9px rgba(93, 168, 220, 1);
+}
+
+.btn--twitter:hover{
+    background-color: rgba(93, 168, 220, 0.4);
+}
+
+.modal__close {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    width: 18px;
+    height: 18px;
+    border: none;
+    text-align: center;
+    overflow: show;
+    cursor: pointer;
+    background: none;
+}
+
+span {
+    background: #2c3e50;
+    width: 18px;
+    height: 2px;
+    display: block;
+    margin: 4px 0px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+span:nth-of-type(1) {
+    transform: translate(0px, 3px) rotate(-45deg);
+}
+
+span:nth-of-type(2) {
+    transform: translate(0px, -3px) rotate(45deg);
+}
+
+@media(max-width: 500px){
+    .modal{
+        margin: 0 10px;
+        padding: 0 20px;
+    }
+
+    .btn{
+        width: 250px;
+    }
+
+    .lead{
+        margin-bottom: 30px;
+    }
+
+    .policy{
+        margin-top: 30px;
+    }
+}
