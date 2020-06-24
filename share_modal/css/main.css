@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #606265;
+  color: #262d2c;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  height: 100vh;
+}
+
+a,
+a:hover {
+  color: #262d2c;
+  text-decoration: none;
+}
+
+.modal {
+  background-color: #ebeced;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 697px;
+  height: 447px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 26px 19px -12px rgba(51, 56, 63, 0.69);
+          box-shadow: 0 26px 19px -12px rgba(51, 56, 63, 0.69);
+}
+
+.modal .modal__close {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  width: 18px;
+  height: 18px;
+  border: none;
+  text-align: center;
+  overflow: show;
+  cursor: pointer;
+}
+
+.modal .modal__close:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.modal .modal__close span {
+  background: #202842;
+  width: 18px;
+  height: 2px;
+  display: block;
+  margin: 4px 0px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.modal .modal__close span:nth-of-type(1) {
+  -webkit-transform: translate(0px, 3px) rotate(-45deg);
+          transform: translate(0px, 3px) rotate(-45deg);
+}
+
+.modal .modal__close span:nth-of-type(2) {
+  -webkit-transform: translate(0px, -3px) rotate(45deg);
+          transform: translate(0px, -3px) rotate(45deg);
+}
+
+.modal .modal__heading {
+  font-size: 26px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.modal .lead {
+  width: 60%;
+  line-height: 22px;
+  text-align: center;
+}
+
+.modal .modal__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 55px 139px 35px;
+}
+
+.modal .modal__buttons .btn {
+  padding-right: 21px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: right;
+}
+
+.modal .modal__buttons .btn--fb {
+  background: #405896 url("../img/facebook-logo.svg") no-repeat 20px 12px;
+}
+
+.modal .modal__buttons .btn--tw {
+  background: #1da1f2 url("../img/twitter-logo.svg") no-repeat 20px 12px;
+}
+
+.modal .modal__buttons .btn--rd {
+  background: #000000 url("../img/reddit-logo.svg") no-repeat 20px 12px;
+}
+
+.modal .modal__share {
+  font-size: 20px;
+}
+
+.modal .modal__share strong {
+  text-transform: uppercase;
+}
+
+.modal .modal__close_link {
+  color: #d66a3a;
+  padding-top: 52px;
+}
+
+.modal .modal__close_link:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 135px;
+  height: 42px;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+@media (max-width: 776px) {
+  .modal {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .modal .modal__buttons {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .modal .lead {
+    width: 80%;
+  }
+  .modal .modal__buttons {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  .modal .modal__buttons .btn {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .modal .modal__close {
+    top: 10px;
+    right: 10px;
+  }
+  .modal .modal__close_link {
+    padding-top: 20px;
+  }
+}
