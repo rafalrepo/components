@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #10182f;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: 'Muli', sans-serif;
+    padding: 100px 0;
+}
+
+.apps {
+    max-width: 1160px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.apps__heading {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.apps__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 20px 0 55px;
+}
+
+.app {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0;
+    border-radius: 5px;
+    border: 1px solid #dae1f5;
+}
+
+.app__img {
+    background-color: #f4f4f4;
+    display: flex;
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+}
+
+.app__img--magic {
+    background-color: #306bf3;
+}
+
+.app__img--gotcha {
+    background-color: #ed204d;
+}
+
+.app__img--barry {
+    background-color: #10182f;
+}
+
+.app__img--tres {
+    background-color: #8d30f3;
+}
+
+.app__img--blueCat {
+    background-color: #1cb6ea;
+}
+
+.app__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 338px;
+}
+
+.app__heading {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.btn {
+    align-self: center;
+    background-color: #10182f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 201px;
+    height: 50px;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 auto;
+    transition: .2s ease-out;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    text-decoration: underline;
+}
+
+.btn i {
+    margin-left: 5px;
+}
+
+@media (max-width: 1000px) {
+    .app__text {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 796px){
+    .app {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .app__heading{
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 660px) and (min-width: 450px){
+    .apps__container {
+        grid-template-columns: 1fr;
+    }
+
+    .app {
+        flex-direction: row;
+        text-align: left;
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 450px){
+
+    .apps {
+        padding: 0 5px;
+    }
+
+    .apps__container {
+        grid-template-columns: 1fr;
+    }
+}
