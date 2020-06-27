@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+@import 'custom';
+@import 'variables';
+@import 'mixin';
+
+
+body{
+    background-color: $bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primary-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    font-family: 'Muli', sans-serif;
+}
+
+.wrapper{
+    background-color: $white;
+    display: grid;
+    max-width: 1200px;
+    width: 100%;
+    overflow: hidden;
+    @include box-shadow(0 20px 60px -25px rgba($primary-color, 0.22));
+}
+
+.container{
+    display: flex;
+    padding: 0 60px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    height: 74px;
+    border-bottom: 1px solid $secondary-color;
+    padding-left: 60px;
+}
+
+.nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav__list{
+        display: flex;
+        width: 50%;
+
+        .nav__link{
+            font-weight: 700;
+            opacity: 0.6;
+            padding-right: 40px;
+        }
+
+        .nav__link--active{
+            opacity: 1;
+        }
+    }
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: auto;
+    width: 50%;
+
+    .login__signin{
+        font-weight: 700;
+        opacity: 0.6;
+        padding-right: 40px;
+    }
+
+    .login__register{
+        background-color: $primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 206px;
+        height: 100%;
+        color: $white;
+        font-weight: 700;
+    }
+}
+
+.breadcrumbs{
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+    .breadcrumbs__item{
+        font-weight: 600;
+        padding: 10px 16px;
+        border-radius: 20px;
+        background-color: rgba(46, 46, 46, 0.05);
+    }
+
+    .breadcrumbs__separator{
+        align-self: center;
+        width: 1px;
+        height: 23px;
+        background-color: $primary-color;
+        margin: 0 10px;
+        transform: rotate(25deg);
+    }
+}
+
+.main{
+    .container{
+        justify-content: space-between;
+    }
+}
+
+.sortNav{
+    display: flex;
+    margin: 30px 0;
+
+    .sortNav__item{
+        margin-right: 30px;
+
+        .sortNav__link{
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: rgba($primary-color, 0.7);
+        }
+
+        .sortNav__link--active{
+            color: $white;
+            border-radius: 3px;
+            background-color: $primary-color;
+            padding: 9px 12px;
+            @include box-shadow(0 2px 12px -4px rgba($primary-color, 0.51));
+        }
+    }
+}
+
+.posts{
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    height: auto;
+
+    .post{
+        padding: 30px 0;
+        border-bottom: 1px solid $secondary-color;
+
+        .post__info{
+            font-size: 14px;
+            letter-spacing: 0.6px;
+            margin-bottom: 10px;
+
+            .info__city{
+                margin-left: 5px;
+
+                &::before{
+                    content: ' ';
+                }
+            }
+
+            .info__date--postponed{
+                color: $postponed;
+            }
+        }
+
+        .post__heading{
+            font-size: 22px;
+            font-weight: 700;
+        }
+    }
+}
+
+.discover{
+    width: 346px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    border: 1px solid $secondary-color;
+
+    .discover__heading{
+        font-size: 20px;
+        font-weight: 700;
+        padding-bottom: 27px;
+        padding-left: 22px;
+    }
+
+    .options{
+        display: flex;
+        flex-direction: column;
+
+        .option{
+            padding: 17px 34px 17px 22px;
+            border-radius: 3px;
+            transition: .4s ease-in-out;
+
+            &:hover{
+                cursor: pointer;
+                color: $white;
+                background-color: $primary-color;
+
+                .business::before{
+                    background: url('../icons/business_h.svg') no-repeat;
+                }
+                .commerce::before{
+                    background: url('../icons/commerce_h.svg') no-repeat;
+                }
+                .human::before{
+                    background: url('../icons/human_h.svg') no-repeat;
+                }
+                .internet::before{
+                    background: url('../icons/internet_h.svg') no-repeat;
+                }
+            }
+
+            h4{
+                position: relative;
+                font-weight: 700;
+                margin-bottom: 10px;
+                padding-left: 25px;
+
+                &::before{
+                    content: '';
+                    display: block;
+                    width: 22px;
+                    height: 22px;
+                    position: absolute;
+                    left: 0
+                }
+            }
+
+            .business::before{
+                background: url('../icons/business.svg') no-repeat;
+            }
+
+            .commerce::before{
+                background: url('../icons/commerce.svg') no-repeat;
+            }
+
+            .human::before{
+                background: url('../icons/human.svg') no-repeat;
+            }
+
+            .internet::before{
+                background: url('../icons/internet.svg') no-repeat;
+            }
+
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1090px){
+
+    .container{
+        padding: 0 15px;
+    }
+
+    .main__content{
+        width: 60%;
+    }
+
+    .posts{
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    .main__sidebar{
+        width: 40%;
+    }
+}
+
+@media(max-width: 860px){
+
+    .header{
+        padding-left: 30px;
+    }
+
+    .login{
+        display: none;
+    }
+
+    .main .container{
+        flex-direction: column;
+        padding: 0 30px;
+    }
+    
+    .main__content,
+    .discover{
+        width: 100%;
+    }
+
+    .main__sidebar{
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+}
