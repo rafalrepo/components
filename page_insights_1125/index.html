@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Insights</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
 </head>
 <body>
     <div class="card">
@@ -14,34 +15,66 @@
                 <h2>Leo Bailey</h2>
                 <p>@leo_bai・Entertainment</p>
             </div>
-            <a href="" class="btn">Edit</a>
+            <a href="" class="btn btn-edit"><i class="far fa-edit"></i> Edit</a>
         </div>
         <div class="card__body">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="">Home</a>
+            <nav class="card__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="" class="nav__link nav__link--active">Home</a>
                     </li>
-                    <li>
-                        <a href="">Projects</a>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Projects</a>
                     </li>
-                    <li>
-                        <a href="">Jobs</a>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Jobs</a>
                     </li>
-                    <li>
-                        <a href="">About</a>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">About</a>
                     </li>
-                    <li>
-                        <a href="">Contact</a>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Contact</a>
                     </li>
                 </ul>
             </nav>
             <div class="card__filter">
-                
+                <h3 class="filter__heading">Insights</h3>
+                <label for="">
+                    <select name="" id="" class="filter__select">
+                        <option value="">May 28 - Jun 24</option>
+                    </select>
+                </label>
             </div>
             <div class="options">
                 <div class="option">
-
+                    <div class="option__level">
+                        <h5 class="option__info">People Reached</h5>
+                        <small class="option__percent"><i class="fas fa-sort-up"></i> 7%</small>
+                    </div>
+                    <div class="option__level">
+                        <div class="option__rank">1,090</div>
+                        <a href="" class="option__more">More info <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="option">
+                    <div class="option__level">
+                        <h5 class="option__info">Post Engagements</h5>
+                        <small class="option__percent"><i class="fas fa-sort-up"></i> 25%</small>
+                    </div>
+                    <div class="option__level">
+                        <div class="option__rank">305</div>
+                        <a href="" class="option__more">More info <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="option">
+                    <div class="option__level">
+                        <h5 class="option__info">Page Likes</h5>
+                        <small class="option__percent"><i class="fas fa-sort-up"></i> 18%</small>
+                    </div>
+                    <div class="option__level">
+                        <div class="option__rank">13</div>
+                        <a href="" class="option__more">More info <i class="fas fa-chevron-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
