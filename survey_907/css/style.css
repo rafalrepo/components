@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #202842;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: 'Muli', sans-serif;
+    height: 100vh;
+    box-shadow: 0 20px 30px -19px rgba(160, 44, 219, 0.58);
+    background-image: linear-gradient(to right, #c79cfc 0%, #fc779f 100%);
+}
+
+a{
+    color: #242e4c;
+    text-decoration: none;
+}
+
+.card{
+    position: relative;
+    background-color: #ffffff;
+    max-width: 702px;
+    width: 100%;
+    height: 496px;
+    display: flex;
+    flex-direction: column;
+    padding: 67px 70px;
+    border-radius: 15px;
+    box-shadow: 0 9px 64px rgba(63, 57, 136, 0.28);
+}
+
+.card h2{
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 22px;
+}
+
+.card p{
+    font-size: 16px;
+    width: 60%;
+}
+
+.card ul{
+    list-style: none;
+    display: flex;
+    height: 180px;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.card ul li{
+    border-radius: 5px;
+}
+
+.card ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #7d7a9e;
+    font-size: 14px;
+    padding: 21px 0 24px;
+    transition: .2s ease-in-out;
+}
+
+.card ul li a span{
+    background-color: #f7f7fc;
+    width: 44px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+.card ul li a.active,
+.card ul li a:hover{
+    font-size: 16px;
+    color: #202842;
+    border-radius: 5px;
+    padding: 21px 27px 24px;
+    border: 1px solid #f775c1;
+}
+
+.card ul li a.active span,
+.card ul li a:hover span{
+    width: 55px;
+    height: 55px;
+    border: 2px solid #f7f7fc;
+    background-color: #ffffff;
+}
+
+.btn__group{
+    padding-top: 37px;
+    padding-bottom: 15px;
+}
+
+.btn{
+    display: inline-block;
+    width: 276px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ebebf2;
+}
+
+.btn--accept{
+    color: #ffffff;
+    border: none;
+    box-shadow:  0px 9px 5px 0px #f243a9;
+    background-image: linear-gradient(to right, #f073c8 0%, #ff6a95 100%);
+}
+
+.card small{
+    color: #7d7a9e;
+    font-size: 12px; 
+}
+
+.card__close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 39px;
+    height: 39px;
+    border: none;
+    border-radius: 50%;
+    background-color: #f7f7fc;
+}
