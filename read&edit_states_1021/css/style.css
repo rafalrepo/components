@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f8fc;
+    color: #646a7c;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    padding: 100px 0;
+    font-family: 'Muli', sans-serif;
+}
+
+a, a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 1291px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.stats{
+    position: relative;
+    width: 100%;
+    height: 297px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 24px 50px -33px rgba(0, 29, 147, 0.25);
+    margin-bottom: 100px;
+}
+
+.stats__item{
+    flex-direction: column;
+    width: 33.3%;
+}
+
+.stats__item i{
+    color: #646a7c;
+    font-size: 20px;
+}
+
+.stats__heading{
+    color: #646a7c;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;  
+    margin: 18px 0 5px;
+}
+
+.stats__value{
+    color: #090e1e;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.modal{
+    flex-direction: column;
+    width: 100%;
+    height: 552px;
+    background-color: #090e1e;
+    border-radius: 5px;
+    box-shadow: 0 24px 50px -33px rgba(0, 29, 147, 0.25);
+}
+
+.modal__heading{
+    color: #c1c7d9;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.modal__lead{
+    color: #c1c7d9;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+.btn{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.btn_round{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.btn_round--edit {
+    position: absolute;
+    right: 50px;
+    bottom: -40px;
+    color: #ffffff;
+    font-size: 30px;
+    background-color: #23a4a2;
+    box-shadow: 0 21px 18px -8px rgba(0, 29, 147, 0.18);
+}
