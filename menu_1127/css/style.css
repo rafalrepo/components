@@ -20,7 +20,7 @@ body {
 }
 
 a, a:hover{
-    color: var(--primary-color);
+    color: #2f3144;
     text-decoration: none;
 }
 
