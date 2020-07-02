@@ -236,6 +236,10 @@ form{
     box-shadow: 0 21px 38px -8px rgba(0, 29, 147, 0.18);
 }
 
+.hidden{
+    display: none;
+}
+
 
 @media (max-width: 991px){
 
